@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-
-
 import { Navbar } from './components/Navbar';
 import { RoutesComp } from './components/RoutesComp';
 import { Footer } from './components/Footer';
@@ -16,6 +14,6 @@ const App = () => {
 			</div>
 		</div>
 	)
-}
+};
 
 export default App;
