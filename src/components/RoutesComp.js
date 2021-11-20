@@ -5,8 +5,8 @@ import { Results } from './Results';
 export const RoutesComp = () => {
 	return (
 		<div className="p-4">
-			<Navigate from="/" to="/search" />
 			<Routes>
+				<Route path="/" element={<Navigate from="/" to="/search" />} />
 				<Route path="/search" element={<Results />} />
 				<Route path="/images" element={<Results />} />
 				<Route path="/news" element={<Results />} />

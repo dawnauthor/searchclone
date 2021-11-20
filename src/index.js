@@ -2,10 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './global.css';
+import { ResultContextProvider } from './contexts/ResultContextProvider';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
-	<Router>
-		<App />
-	</Router>, document.getElementById('root')
+	<ResultContextProvider>
+		<Router>
+			<App />
+		</Router>
+	</ResultContextProvider>,
+	document.getElementById('root')
 );
